@@ -194,6 +194,7 @@
 					0773E2D61D253D6100F7460A = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = ZEZJBH88LK;
+						LastSwiftMigration = 0800;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -202,10 +203,12 @@
 					};
 					0773E2EA1D253D6100F7460A = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 0773E2D61D253D6100F7460A;
 					};
 					0773E2F51D253D6100F7460A = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 0773E2D61D253D6100F7460A;
 					};
 				};
@@ -414,6 +417,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ericlondon.com.Location-Tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -428,6 +432,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ericlondon.com.Location-Tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -439,6 +444,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ericlondon.com.Location-TrackerTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Location Tracker.app/Location Tracker";
 			};
 			name = Debug;
@@ -451,6 +457,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ericlondon.com.Location-TrackerTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Location Tracker.app/Location Tracker";
 			};
 			name = Release;
@@ -462,6 +469,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ericlondon.com.Location-TrackerUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = "Location Tracker";
 			};
 			name = Debug;
@@ -473,6 +481,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ericlondon.com.Location-TrackerUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = "Location Tracker";
 			};
 			name = Release;
@@ -496,6 +505,7 @@
 				0773E3011D253D6100F7460A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0773E3021D253D6100F7460A /* Build configuration list for PBXNativeTarget "Location TrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +514,7 @@
 				0773E3041D253D6100F7460A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0773E3051D253D6100F7460A /* Build configuration list for PBXNativeTarget "Location TrackerUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +523,7 @@
 				0773E3071D253D6100F7460A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
