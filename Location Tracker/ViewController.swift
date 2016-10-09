@@ -28,15 +28,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             locationManager.requestAlwaysAuthorization()
         }
 
-        if CLLocationManager.locationServicesEnabled() {
-            locationManager.startUpdatingLocation()
+        if CLLocationManager.locationServicesEnabled() && CLLocationManager.significantLocationChangeMonitoringAvailable() {
+            // locationManager.startUpdatingLocation()
+            locationManager.startMonitoringSignificantLocationChanges()
         }
         
         // API Stuff:
         device_uuid = UIDevice.currentDevice().identifierForVendor!.UUIDString
 
         // TODO: get ngrok working, or deploy to a production environment:
-        api_host = "10.10.3.120:3000"
+        api_host = "10.0.1.4:3000"
         
     }
 
@@ -47,7 +48,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 
     func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
         if status == .AuthorizedAlways {
-            locationManager.startUpdatingLocation()
+            // locationManager.startUpdatingLocation()
+            locationManager.startMonitoringSignificantLocationChanges()
         }
     }
 
@@ -79,8 +81,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         task.resume()
         
     }
-
-    // TODO: signification location
     
 }
 
